@@ -4,4 +4,4 @@ Twitter bot written using python, selenium and tweepy. Automatically tweets the 
 Nedd to add comments.
 bot url https://twitter.com/dibbsOnBtmFrag
 
-![Alt text](example.png?raw=true "Example")
+![Alt text](https://github.com/amansr1vastava/csgo-twitter-bot/blob/master/example.PNG?raw=true "Example")
