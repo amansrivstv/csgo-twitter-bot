@@ -150,6 +150,7 @@ while(True):
         tweet_text = generate_tweet_text(matchDict)
         tweet_with_tweepy(tweet_text,matchDict['Map'])
         driver.quit()
+        print("sleeping for an hour.....")
         time.sleep(60*60)
     else:
         print("sleeping for an hour.....")
