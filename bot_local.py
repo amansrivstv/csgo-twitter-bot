@@ -62,7 +62,6 @@ def scrape_latest_match_data(latest_match_id):
     matchDict['a4k'] = score_list[2]
     matchDict['a3k'] = score_list[1]
     matchDict['Rating'] = score_list[0]
-    driver.close()
     driver.get(match_link)
     time.sleep(5)
     detail_element = driver.find_element_by_id('match-details')
@@ -147,7 +146,7 @@ while(True):
     #peek = True
     #latest_match_id = scrape_latest_match_id()
     if (peek):
-        matchDict = scrape_latest_match_data(latest_match_id)
+        matchDict = scrape_latest_match_data(match_id)
         tweet_text = generate_tweet_text(matchDict)
         tweet_with_tweepy(tweet_text,matchDict['Map'])
         driver.quit()
